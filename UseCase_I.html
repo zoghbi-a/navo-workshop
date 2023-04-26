@@ -1,32 +1,42 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html >
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Science User Case - Inspecting a Candidate List &#8212; NASA-NAVO Workshops Notebooks</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -34,57 +44,103 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UseCase_I';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Preparing a proposal" href="UseCase_II.html" />
     <link rel="prev" title="Quick Reference" href="QuickReference.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
     
-    <div class="container-fluid" id="banner"></div>
-
     
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
 
-    <div class="container-xl">
-      <div class="row">
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">NASA-NAVO Workshops Notebooks</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
-      
-      
-      
-      <h1 class="site-logo" id="site-title">NASA-NAVO Workshops Notebooks</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/NASA-NAVO/navo-workshop" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -94,498 +150,307 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="CS_Catalog_Queries.html">
-   Accessing  astronomical catalogs
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="CS_Image_Access.html">
-   Searching for and retrieving images
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="CS_Spectral_Access.html">
-   Retrieve spectra using Simple Spectral Access protocol
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="CS_UCDs.html">
-   UCDs:  working with heterogeneous tables
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="CS_VO_Tables.html">
-   Creating a VO Table from a CSV file
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Exercise_I.html">
-   Science User Case - Inspecting a Candidate List
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Exercise_II.html">
-   Preparing a proposal
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="Exercise_III.html">
-   Creating a stellar color-magnitude (or Hertzsprung-Russell) diagram
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="QuickReference.html">
-   Quick Reference
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Science User Case - Inspecting a Candidate List
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="UseCase_II.html">
-   Preparing a proposal
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="UseCase_III.html">
-   Creating a stellar color-magnitude (or Hertzsprung-Russell) diagram
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="CS_Catalog_Queries.html">Accessing  astronomical catalogs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CS_Image_Access.html">Searching for and retrieving images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CS_Spectral_Access.html">Retrieve spectra using Simple Spectral Access protocol</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CS_UCDs.html">UCDs:  working with heterogeneous tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CS_VO_Tables.html">Creating a VO Table from a CSV file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercise_I.html">Science User Case - Inspecting a Candidate List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercise_II.html">Preparing a proposal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Exercise_III.html">Creating a stellar color-magnitude (or Hertzsprung-Russell) diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="QuickReference.html">Quick Reference</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Science User Case - Inspecting a Candidate List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UseCase_II.html">Preparing a proposal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="UseCase_III.html">Creating a stellar color-magnitude (or Hertzsprung-Russell) diagram</a></li>
 </ul>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="00_SETUP.html">
-   Configuring the Workshop Environment
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="KNOWN_ISSUES.html">
-   Known issues and workarounds
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="00_SETUP.html">Configuring the Workshop Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="KNOWN_ISSUES.html">Known issues and workarounds</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/NASA-NAVO/navo-workshop/main?urlpath=tree/UseCase_I.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/NASA-NAVO/navo-workshop/main?urlpath=tree/UseCase_I.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_binder.svg">
   </span>
-<span class="headerbtn__text-container">Binder</span>
+<span class="btn__text-container">Binder</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        <a href="https://colab.research.google.com/github/NASA-NAVO/navo-workshop/blob/main/UseCase_I.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/NASA-NAVO/navo-workshop/blob/main/UseCase_I.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/NASA-NAVO/navo-workshop" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NASA-NAVO/navo-workshop/edit/main/UseCase_I.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/NASA-NAVO/navo-workshop/issues/new?title=Issue%20on%20page%20%2FUseCase_I.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UseCase_I.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/NASA-NAVO/navo-workshop"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/NASA-NAVO/navo-workshop/issues/new?title=Issue%20on%20page%20%2FUseCase_I.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/NASA-NAVO/navo-workshop/edit/main/UseCase_I.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/UseCase_I.ipynb.txt"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-the-python-modules-we-ll-be-using">
-   1. Import the Python modules we’ll be using.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-ned-for-objects-in-this-paper">
-   2. Search NED for objects in this paper.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#filter-the-ned-results">
-   3. Filter the NED results.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources">
-   4. Search the NAVO Registry for image resources.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources-that-will-allow-you-to-search-for-allwise-images">
-   5. Search the NAVO Registry for image resources that will allow you to search for AllWISE images.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-the-allwise-image-service-that-you-are-interested-in">
-   6. Choose the AllWISE image service that you are interested in.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-one-of-the-galaxies-in-the-ned-list">
-   7. Choose one of the galaxies in the NED list.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-for-a-list-of-allwise-images-that-cover-this-galaxy">
-   8. Search for a list of AllWISE images that cover this galaxy.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#use-the-to-table-method-to-view-the-results-as-an-astropy-table">
-   9. Use the .to_table() method to view the results as an Astropy table.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#from-the-result-in-8-select-the-first-record-for-an-image-taken-in-wise-band-w1-3-6-micron">
-   10. From the result in 8., select the first record for an image taken in WISE band W1 (3.6 micron)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualize-this-allwise-image">
-   11. Visualize this AllWISE image.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#plot-a-cutout-of-the-allwise-image-centered-on-your-position">
-   12. Plot a cutout of the AllWISE image, centered on your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-a-galex-image-that-covers-your-position">
-   13. Try visualizing a cutout of a GALEX image that covers your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-an-sdss-image-that-covers-your-position">
-   14. Try visualizing a cutout of an SDSS image that covers your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-looping-over-all-positions-and-plotting-multiwavelength-cutouts">
-   15. Try looping over all positions and plotting multiwavelength cutouts.
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Science User Case - Inspecting a Candidate List</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-the-python-modules-we-ll-be-using">
-   1. Import the Python modules we’ll be using.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-ned-for-objects-in-this-paper">
-   2. Search NED for objects in this paper.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#filter-the-ned-results">
-   3. Filter the NED results.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources">
-   4. Search the NAVO Registry for image resources.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources-that-will-allow-you-to-search-for-allwise-images">
-   5. Search the NAVO Registry for image resources that will allow you to search for AllWISE images.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-the-allwise-image-service-that-you-are-interested-in">
-   6. Choose the AllWISE image service that you are interested in.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#choose-one-of-the-galaxies-in-the-ned-list">
-   7. Choose one of the galaxies in the NED list.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#search-for-a-list-of-allwise-images-that-cover-this-galaxy">
-   8. Search for a list of AllWISE images that cover this galaxy.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#use-the-to-table-method-to-view-the-results-as-an-astropy-table">
-   9. Use the .to_table() method to view the results as an Astropy table.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#from-the-result-in-8-select-the-first-record-for-an-image-taken-in-wise-band-w1-3-6-micron">
-   10. From the result in 8., select the first record for an image taken in WISE band W1 (3.6 micron)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#visualize-this-allwise-image">
-   11. Visualize this AllWISE image.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#plot-a-cutout-of-the-allwise-image-centered-on-your-position">
-   12. Plot a cutout of the AllWISE image, centered on your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-a-galex-image-that-covers-your-position">
-   13. Try visualizing a cutout of a GALEX image that covers your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-an-sdss-image-that-covers-your-position">
-   14. Try visualizing a cutout of an SDSS image that covers your position.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#try-looping-over-all-positions-and-plotting-multiwavelength-cutouts">
-   15. Try looping over all positions and plotting multiwavelength cutouts.
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Science User Case - Inspecting a Candidate List</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-python-modules-we-ll-be-using">1. Import the Python modules we’ll be using.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-ned-for-objects-in-this-paper">2. Search NED for objects in this paper.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-the-ned-results">3. Filter the NED results.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources">4. Search the NAVO Registry for image resources.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources-that-will-allow-you-to-search-for-allwise-images">5. Search the NAVO Registry for image resources that will allow you to search for AllWISE images.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-allwise-image-service-that-you-are-interested-in">6. Choose the AllWISE image service that you are interested in.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-one-of-the-galaxies-in-the-ned-list">7. Choose one of the galaxies in the NED list.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-for-a-list-of-allwise-images-that-cover-this-galaxy">8. Search for a list of AllWISE images that cover this galaxy.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-to-table-method-to-view-the-results-as-an-astropy-table">9. Use the .to_table() method to view the results as an Astropy table.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-the-result-in-8-select-the-first-record-for-an-image-taken-in-wise-band-w1-3-6-micron">10. From the result in 8., select the first record for an image taken in WISE band W1 (3.6 micron)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-this-allwise-image">11. Visualize this AllWISE image.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-cutout-of-the-allwise-image-centered-on-your-position">12. Plot a cutout of the AllWISE image, centered on your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-a-galex-image-that-covers-your-position">13. Try visualizing a cutout of a GALEX image that covers your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-an-sdss-image-that-covers-your-position">14. Try visualizing a cutout of an SDSS image that covers your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-looping-over-all-positions-and-plotting-multiwavelength-cutouts">15. Try looping over all positions and plotting multiwavelength cutouts.</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
   <section id="science-user-case-inspecting-a-candidate-list">
 <h1>Science User Case - Inspecting a Candidate List<a class="headerlink" href="#science-user-case-inspecting-a-candidate-list" title="Permalink to this headline">#</a></h1>
 <p><a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2016ApJ...817..109O/abstract">Ogle et al. (2016)</a> mined the NASA/IPAC Extragalactic Database (NED) to identify a new type of galaxy: Superluminous Spiral Galaxies.</p>
@@ -630,7 +495,7 @@ title="Print to PDF"
 <section id="search-ned-for-objects-in-this-paper">
 <h2>2. Search NED for objects in this paper.<a class="headerlink" href="#search-ned-for-objects-in-this-paper" title="Permalink to this headline">#</a></h2>
 <p>Insert a Code Cell below by clicking on the “Insert” Menu and choosing “Insert Cell Below”. Then consult QuickReference.md to figure out how to use astroquery to search NED for all objects in a paper, based on the refcode of the paper. Inspect the resulting astropy table.</p>
-<div class="cell docutils container">
+<div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">objects_in_paper</span> <span class="o">=</span> <span class="n">Ned</span><span class="o">.</span><span class="n">query_refcode</span><span class="p">(</span><span class="s1">&#39;2016ApJ...817..109O&#39;</span><span class="p">)</span>
 <span class="n">objects_in_paper</span><span class="o">.</span><span class="n">show_in_notebook</span><span class="p">()</span>
@@ -639,71 +504,71 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><i>Table length=62</i>
-<table id="table140393296853408-204777" class="table-striped table-bordered table-condensed">
+<table id="table139962596448224-801183" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>No.</th><th>Object Name</th><th>RA</th><th>DEC</th><th>Type</th><th>Velocity</th><th>Redshift</th><th>Redshift Flag</th><th>Magnitude and Filter</th><th>Separation</th><th>References</th><th>Notes</th><th>Photometry Points</th><th>Positions</th><th>Redshift Points</th><th>Diameter Points</th><th>Associations</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th>degrees</th><th>degrees</th><th></th><th>km / s</th><th></th><th></th><th></th><th>arcmin</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
-<tr><td>0</td><td>1</td><td>WISEA J001550.14-100242.3</td><td>3.95892</td><td>-10.04511</td><td>G</td><td>52766.0</td><td>0.17601</td><td>SPEC</td><td>17.5g</td><td>--</td><td>15</td><td>0</td><td>63</td><td>8</td><td>7</td><td>10</td><td>0</td></tr>
-<tr><td>1</td><td>2</td><td>WISEA J003807.80-010936.7</td><td>9.53252</td><td>-1.16024</td><td>G</td><td>62442.0</td><td>0.208284</td><td>SPEC</td><td>18.0g</td><td>--</td><td>16</td><td>0</td><td>72</td><td>12</td><td>9</td><td>10</td><td>0</td></tr>
-<tr><td>2</td><td>3</td><td>WISEA J040422.92-054134.8</td><td>61.09548</td><td>-5.69303</td><td>G</td><td>75113.0</td><td>0.250549</td><td>SPEC</td><td>18.6g</td><td>--</td><td>7</td><td>0</td><td>61</td><td>10</td><td>7</td><td>8</td><td>0</td></tr>
-<tr><td>3</td><td>4</td><td>WISEA J073806.16+282359.6</td><td>114.52568</td><td>28.39995</td><td>G</td><td>69225.0</td><td>0.230909</td><td>SPEC</td><td>18.0g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>4</td><td>5</td><td>2MASX J07550424+1353261</td><td>118.76776</td><td>13.89065</td><td>G</td><td>66746.0</td><td>0.22264</td><td>SPEC</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>38</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>5</td><td>6</td><td>WISEA J082655.11+181147.7</td><td>126.72969</td><td>18.19665</td><td>G</td><td>79580.0</td><td>0.265449</td><td>SPEC</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>46</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>6</td><td>7</td><td>2MASX J08542169+0449308</td><td>133.59033</td><td>4.82511</td><td>G</td><td>47005.0</td><td>0.156793</td><td>SPEC</td><td>16.7g</td><td>--</td><td>18</td><td>0</td><td>58</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>7</td><td>8</td><td>WHL J090944.8+222607</td><td>137.4367</td><td>22.43539</td><td>GClstr</td><td>88683.0</td><td>0.295813</td><td>PHOT</td><td></td><td>--</td><td>7</td><td>0</td><td>0</td><td>4</td><td>5</td><td>0</td><td>0</td></tr>
-<tr><td>8</td><td>9</td><td>2MASX J09094480+2226078</td><td>137.4367</td><td>22.43538</td><td>G</td><td>85557.0</td><td>0.285388</td><td>SPEC</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>30</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>9</td><td>10</td><td>2MASX J09260805+2405242</td><td>141.53357</td><td>24.09004</td><td>G</td><td>66672.0</td><td>0.222393</td><td>SPEC</td><td>17.8g</td><td>--</td><td>16</td><td>0</td><td>32</td><td>7</td><td>9</td><td>6</td><td>0</td></tr>
-<tr><td>10</td><td>11</td><td>WHL J092608.1+240524</td><td>141.53357</td><td>24.09004</td><td>GClstr</td><td>66284.0</td><td>0.2211</td><td>SPEC</td><td></td><td>--</td><td>6</td><td>0</td><td>0</td><td>4</td><td>5</td><td>0</td><td>0</td></tr>
-<tr><td>11</td><td>12</td><td>WISEA J093347.77+211436.7</td><td>143.44901</td><td>21.24346</td><td>G</td><td>51620.0</td><td>0.172186</td><td>SPEC</td><td>16.9g</td><td>--</td><td>46</td><td>0</td><td>51</td><td>18</td><td>14</td><td>6</td><td>1</td></tr>
-<tr><td>12</td><td>13</td><td>WISEA J093622.14+390628.9</td><td>144.09222</td><td>39.10801</td><td>G</td><td>84821.0</td><td>0.282931</td><td>SPEC</td><td>18.5g</td><td>--</td><td>6</td><td>0</td><td>66</td><td>7</td><td>3</td><td>10</td><td>0</td></tr>
-<tr><td>13</td><td>14</td><td>MSPM 05544</td><td>146.2235</td><td>22.8851</td><td>GClstr</td><td>26738.0</td><td>0.08919</td><td></td><td></td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
-<tr><td>14</td><td>15</td><td>CGCG 122-067</td><td>146.22351</td><td>22.88512</td><td>G</td><td>26686.0</td><td>0.089016</td><td>SPEC</td><td>15.3g</td><td>--</td><td>31</td><td>0</td><td>49</td><td>10</td><td>10</td><td>8</td><td>0</td></tr>
-<tr><td>15</td><td>16</td><td>WISEA J094700.08+254045.8</td><td>146.75035</td><td>25.67938</td><td>G</td><td>32690.0</td><td>0.109043</td><td>SPEC</td><td>15.8g</td><td>--</td><td>21</td><td>0</td><td>46</td><td>7</td><td>7</td><td>6</td><td>0</td></tr>
-<tr><td>16</td><td>17</td><td>SDSS J095727.02+083501.7</td><td>149.36259</td><td>8.58383</td><td>G</td><td>76903.0</td><td>0.256521</td><td>SPEC</td><td>18.3g</td><td>--</td><td>8</td><td>0</td><td>39</td><td>5</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>17</td><td>18</td><td>WISEA J100356.88+382902.1</td><td>150.98703</td><td>38.48391</td><td>G</td><td>77525.0</td><td>0.258596</td><td>SPEC</td><td>17.8g</td><td>--</td><td>8</td><td>0</td><td>57</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
-<tr><td>18</td><td>19</td><td>WISEA J100416.04+295844.1</td><td>151.06683</td><td>29.97899</td><td>G</td><td>89471.0</td><td>0.298443</td><td>SPEC</td><td>18.7g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>19</td><td>20</td><td>WISEA J100956.35+261132.0</td><td>152.48475</td><td>26.19223</td><td>G</td><td>72216.0</td><td>0.240886</td><td>SPEC</td><td>18.1g</td><td>--</td><td>13</td><td>0</td><td>46</td><td>7</td><td>4</td><td>6</td><td>0</td></tr>
-<tr><td>20</td><td>21</td><td>GMBCG J152.52936+32.89139</td><td>152.52936</td><td>32.89139</td><td>GClstr</td><td>95634.0</td><td>0.319</td><td>PHOT</td><td></td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
-<tr><td>21</td><td>22</td><td>WISEA J101007.05+325329.0</td><td>152.52936</td><td>32.89141</td><td>G</td><td>86909.0</td><td>0.289896</td><td>SPEC</td><td>18.7g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>22</td><td>23</td><td>2MASS J10160396+3037481</td><td>154.01655</td><td>30.62998</td><td>G</td><td>75520.0</td><td>0.251906</td><td>SPEC</td><td>18.7g</td><td>--</td><td>6</td><td>0</td><td>49</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
-<tr><td>23</td><td>24</td><td>WISEA J102154.85+072415.5</td><td>155.47856</td><td>7.40432</td><td>G</td><td>87123.0</td><td>0.290611</td><td>SPEC</td><td>18.4g</td><td>--</td><td>6</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>24</td><td>25</td><td>WISEA J103015.74-010607.0</td><td>157.56561</td><td>-1.10198</td><td>G</td><td>84625.0</td><td>0.282277</td><td>SPEC</td><td>18.3g</td><td>--</td><td>11</td><td>0</td><td>62</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>25</td><td>26</td><td>2MASX J10304263+0418219</td><td>157.67753</td><td>4.30602</td><td>G</td><td>48244.0</td><td>0.160924</td><td>SPEC</td><td>16.8g</td><td>--</td><td>24</td><td>0</td><td>59</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>26</td><td>27</td><td>SDSS CE J160.241898-01.069106</td><td>160.235</td><td>-1.06611</td><td>GClstr</td><td>75548.0</td><td>0.252</td><td>SPEC</td><td></td><td>--</td><td>6</td><td>0</td><td>0</td><td>3</td><td>5</td><td>0</td><td>0</td></tr>
-<tr><td>27</td><td>28</td><td>2MASX J10405643-0103584</td><td>160.23509</td><td>-1.06632</td><td>G</td><td>75021.0</td><td>0.250242</td><td>SPEC</td><td>18.2g</td><td>--</td><td>17</td><td>0</td><td>51</td><td>9</td><td>9</td><td>10</td><td>0</td></tr>
-<tr><td>28</td><td>29</td><td>WISEA J104724.97+230917.4</td><td>161.85435</td><td>23.15474</td><td>G</td><td>54729.0</td><td>0.182556</td><td>SPEC</td><td>18.46</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>29</td><td>30</td><td>WISEA J111917.41+141946.5</td><td>169.8226</td><td>14.3296</td><td>G</td><td>43101.0</td><td>0.143771</td><td>SPEC</td><td>16.6g</td><td>--</td><td>20</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>30</td><td>31</td><td>2MASS J11292875+0255498</td><td>172.36978</td><td>2.93055</td><td>G</td><td>71830.0</td><td>0.239599</td><td>SPEC</td><td>17.5g</td><td>--</td><td>9</td><td>0</td><td>49</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>31</td><td>32</td><td>WISEA J113800.86+521303.8</td><td>174.50367</td><td>52.21775</td><td>G</td><td>88717.0</td><td>0.295927</td><td>SPEC</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>32</td><td>33</td><td>WISEA J114100.04+384807.4</td><td>175.25022</td><td>38.80207</td><td>G</td><td>80255.0</td><td>0.267701</td><td>SPEC</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>33</td><td>34</td><td>WISEA J115052.96+460448.1</td><td>177.72076</td><td>46.08006</td><td>G</td><td>86778.0</td><td>0.289461</td><td>SPEC</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>53</td><td>9</td><td>7</td><td>8</td><td>0</td></tr>
-<tr><td>34</td><td>35</td><td>WISEA J115356.21+492355.4</td><td>178.48416</td><td>49.39881</td><td>G</td><td>49984.0</td><td>0.166728</td><td>SPEC</td><td>17.1g</td><td>--</td><td>19</td><td>0</td><td>67</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>35</td><td>36</td><td>2MASX J11593546+1257080</td><td>179.89761</td><td>12.95205</td><td>G</td><td>79003.0</td><td>0.263525</td><td>SPEC</td><td>18.3g</td><td>--</td><td>7</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>36</td><td>37</td><td>WISEA J120053.92+480007.8</td><td>180.22477</td><td>48.00213</td><td>G</td><td>83466.0</td><td>0.278413</td><td>SPEC</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>70</td><td>7</td><td>5</td><td>10</td><td>0</td></tr>
-<tr><td>37</td><td>38</td><td>GMBCG J180.22479+48.00211</td><td>180.22479</td><td>48.00211</td><td>GClstr</td><td>74948.0</td><td>0.25</td><td>PHOT</td><td></td><td>--</td><td>5</td><td>0</td><td>0</td><td>2</td><td>3</td><td>0</td><td>0</td></tr>
-<tr><td>38</td><td>39</td><td>WISEA J121644.33+122450.5</td><td>184.18477</td><td>12.41404</td><td>G</td><td>77030.0</td><td>0.256944</td><td>SPEC</td><td>18.3g</td><td>--</td><td>5</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>39</td><td>40</td><td>WISEA J122100.50+482729.1</td><td>185.25209</td><td>48.45807</td><td>G</td><td>89836.0</td><td>0.299659</td><td>SPEC</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>61</td><td>8</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>40</td><td>41</td><td>WISEA J123215.19+102119.1</td><td>188.06311</td><td>10.35535</td><td>G</td><td>49729.0</td><td>0.165877</td><td>SPEC</td><td>17.2g</td><td>--</td><td>19</td><td>0</td><td>66</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>41</td><td>42</td><td>WISEA J123431.08+515629.7</td><td>188.62952</td><td>51.94146</td><td>G</td><td>88714.0</td><td>0.295917</td><td>SPEC</td><td>18.1g</td><td>--</td><td>29</td><td>0</td><td>64</td><td>10</td><td>11</td><td>10</td><td>0</td></tr>
-<tr><td>42</td><td>43</td><td>WISEA J123746.63+481227.5</td><td>189.44448</td><td>48.20767</td><td>G</td><td>81679.0</td><td>0.272452</td><td>SPEC</td><td>18.2g</td><td>--</td><td>8</td><td>0</td><td>65</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>43</td><td>44</td><td>WISEA J131039.32+223502.8</td><td>197.66385</td><td>22.58407</td><td>G</td><td>69320.0</td><td>0.231225</td><td>SPEC</td><td>18.1g</td><td>--</td><td>12</td><td>0</td><td>48</td><td>8</td><td>5</td><td>6</td><td>1</td></tr>
-<tr><td>44</td><td>45</td><td>WISEA J132757.52+334529.3</td><td>201.98969</td><td>33.75806</td><td>G</td><td>74623.0</td><td>0.248916</td><td>SPEC</td><td>17.7g</td><td>--</td><td>15</td><td>0</td><td>88</td><td>12</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>45</td><td>46</td><td>WISEA J134228.33+115734.5</td><td>205.61806</td><td>11.95954</td><td>G</td><td>83561.0</td><td>0.27873</td><td>SPEC</td><td>19.0g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>46</td><td>47</td><td>WISEA J134355.49+244048.1</td><td>205.98124</td><td>24.68001</td><td>G</td><td>41147.0</td><td>0.13725</td><td>SPEC</td><td>17.81</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>WISEA J001550.14-100242.3</td><td>3.95892</td><td>-10.04511</td><td>G</td><td>52766.0</td><td>0.17601</td><td>SLS</td><td>17.5g</td><td>--</td><td>15</td><td>0</td><td>63</td><td>8</td><td>7</td><td>10</td><td>0</td></tr>
+<tr><td>1</td><td>2</td><td>WISEA J003807.80-010936.7</td><td>9.53252</td><td>-1.16024</td><td>G</td><td>62442.0</td><td>0.208284</td><td>SLS</td><td>18.0g</td><td>--</td><td>16</td><td>0</td><td>72</td><td>12</td><td>9</td><td>10</td><td>0</td></tr>
+<tr><td>2</td><td>3</td><td>WISEA J040422.92-054134.8</td><td>61.09548</td><td>-5.69303</td><td>G</td><td>75113.0</td><td>0.250549</td><td>SLS</td><td>18.6g</td><td>--</td><td>7</td><td>0</td><td>61</td><td>10</td><td>7</td><td>8</td><td>0</td></tr>
+<tr><td>3</td><td>4</td><td>WISEA J073806.16+282359.6</td><td>114.52568</td><td>28.39995</td><td>G</td><td>69225.0</td><td>0.230909</td><td>SLS</td><td>18.0g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>4</td><td>5</td><td>2MASX J07550424+1353261</td><td>118.76776</td><td>13.89065</td><td>G</td><td>66746.0</td><td>0.22264</td><td>SLS</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>38</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>5</td><td>6</td><td>WISEA J082655.11+181147.7</td><td>126.72969</td><td>18.19665</td><td>G</td><td>79580.0</td><td>0.265449</td><td>SLS</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>46</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>6</td><td>7</td><td>2MASX J08542169+0449308</td><td>133.59033</td><td>4.82511</td><td>G</td><td>47005.0</td><td>0.156793</td><td>SLS</td><td>16.7g</td><td>--</td><td>18</td><td>0</td><td>58</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>7</td><td>8</td><td>WHL J090944.8+222607</td><td>137.4367</td><td>22.43539</td><td>GClstr</td><td>88683.0</td><td>0.295813</td><td>PUN</td><td></td><td>--</td><td>7</td><td>0</td><td>0</td><td>4</td><td>5</td><td>0</td><td>0</td></tr>
+<tr><td>8</td><td>9</td><td>2MASX J09094480+2226078</td><td>137.4367</td><td>22.43538</td><td>G</td><td>85557.0</td><td>0.285388</td><td>SLS</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>30</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>9</td><td>10</td><td>2MASX J09260805+2405242</td><td>141.53357</td><td>24.09004</td><td>G</td><td>66672.0</td><td>0.222393</td><td>SLS</td><td>17.8g</td><td>--</td><td>16</td><td>0</td><td>32</td><td>7</td><td>9</td><td>6</td><td>0</td></tr>
+<tr><td>10</td><td>11</td><td>WHL J092608.1+240524</td><td>141.53357</td><td>24.09004</td><td>GClstr</td><td>66284.0</td><td>0.2211</td><td>SUN</td><td></td><td>--</td><td>7</td><td>0</td><td>0</td><td>5</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>11</td><td>12</td><td>WISEA J093347.77+211436.7</td><td>143.44901</td><td>21.24346</td><td>G</td><td>51620.0</td><td>0.172186</td><td>SLS</td><td>16.9g</td><td>--</td><td>48</td><td>0</td><td>51</td><td>20</td><td>15</td><td>6</td><td>1</td></tr>
+<tr><td>12</td><td>13</td><td>WISEA J093622.14+390628.9</td><td>144.09222</td><td>39.10801</td><td>G</td><td>84821.0</td><td>0.282931</td><td>SLS</td><td>18.5g</td><td>--</td><td>6</td><td>0</td><td>66</td><td>7</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>13</td><td>14</td><td>MSPM 05544</td><td>146.2235</td><td>22.8851</td><td>GClstr</td><td>26738.0</td><td>0.08919</td><td>MUN</td><td></td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>14</td><td>15</td><td>CGCG 122-067</td><td>146.22351</td><td>22.88512</td><td>G</td><td>26686.0</td><td>0.089016</td><td>SLS</td><td>15.3g</td><td>--</td><td>33</td><td>0</td><td>49</td><td>12</td><td>11</td><td>8</td><td>0</td></tr>
+<tr><td>15</td><td>16</td><td>WISEA J094700.08+254045.8</td><td>146.75035</td><td>25.67938</td><td>G</td><td>32690.0</td><td>0.109043</td><td>SLS</td><td>15.8g</td><td>--</td><td>21</td><td>0</td><td>46</td><td>7</td><td>7</td><td>6</td><td>0</td></tr>
+<tr><td>16</td><td>17</td><td>SDSS J095727.02+083501.7</td><td>149.36259</td><td>8.58383</td><td>G</td><td>76903.0</td><td>0.256521</td><td>SLS</td><td>18.3g</td><td>--</td><td>8</td><td>0</td><td>39</td><td>5</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>17</td><td>18</td><td>WISEA J100356.88+382902.1</td><td>150.98703</td><td>38.48391</td><td>G</td><td>77525.0</td><td>0.258596</td><td>SLS</td><td>17.8g</td><td>--</td><td>8</td><td>0</td><td>57</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
+<tr><td>18</td><td>19</td><td>WISEA J100416.04+295844.1</td><td>151.06683</td><td>29.97899</td><td>G</td><td>89471.0</td><td>0.298443</td><td>SLS</td><td>18.7g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>19</td><td>20</td><td>WISEA J100956.35+261132.0</td><td>152.48475</td><td>26.19223</td><td>G</td><td>72216.0</td><td>0.240886</td><td>SLS</td><td>18.1g</td><td>--</td><td>13</td><td>0</td><td>46</td><td>7</td><td>4</td><td>6</td><td>0</td></tr>
+<tr><td>20</td><td>21</td><td>GMBCG J152.52936+32.89139</td><td>152.52936</td><td>32.89139</td><td>GClstr</td><td>95634.0</td><td>0.319</td><td>PUN</td><td></td><td>--</td><td>4</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>21</td><td>22</td><td>WISEA J101007.05+325329.0</td><td>152.52936</td><td>32.89141</td><td>G</td><td>86909.0</td><td>0.289896</td><td>SLS</td><td>18.7g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>22</td><td>23</td><td>2MASS J10160396+3037481</td><td>154.01655</td><td>30.62998</td><td>G</td><td>75520.0</td><td>0.251906</td><td>SLS</td><td>18.7g</td><td>--</td><td>6</td><td>0</td><td>49</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
+<tr><td>23</td><td>24</td><td>WISEA J102154.85+072415.5</td><td>155.47856</td><td>7.40432</td><td>G</td><td>87123.0</td><td>0.290611</td><td>SLS</td><td>18.4g</td><td>--</td><td>6</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>24</td><td>25</td><td>WISEA J103015.74-010607.0</td><td>157.56561</td><td>-1.10198</td><td>G</td><td>84625.0</td><td>0.282277</td><td>SLS</td><td>18.3g</td><td>--</td><td>11</td><td>0</td><td>62</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>25</td><td>26</td><td>2MASX J10304263+0418219</td><td>157.67753</td><td>4.30602</td><td>G</td><td>48244.0</td><td>0.160924</td><td>SLS</td><td>16.8g</td><td>--</td><td>24</td><td>0</td><td>59</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>26</td><td>27</td><td>SDSS CE J160.241898-01.069106</td><td>160.235</td><td>-1.06611</td><td>GClstr</td><td>75548.0</td><td>0.252</td><td>SUN</td><td></td><td>--</td><td>7</td><td>0</td><td>0</td><td>4</td><td>6</td><td>0</td><td>0</td></tr>
+<tr><td>27</td><td>28</td><td>2MASX J10405643-0103584</td><td>160.23509</td><td>-1.06632</td><td>G</td><td>75021.0</td><td>0.250242</td><td>SLS</td><td>18.2g</td><td>--</td><td>17</td><td>0</td><td>51</td><td>9</td><td>9</td><td>10</td><td>0</td></tr>
+<tr><td>28</td><td>29</td><td>WISEA J104724.97+230917.4</td><td>161.85435</td><td>23.15474</td><td>G</td><td>54729.0</td><td>0.182556</td><td>SLS</td><td>18.46</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>29</td><td>30</td><td>WISEA J111917.41+141946.5</td><td>169.8226</td><td>14.3296</td><td>G</td><td>43101.0</td><td>0.143771</td><td>SLS</td><td>16.6g</td><td>--</td><td>20</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>30</td><td>31</td><td>2MASS J11292875+0255498</td><td>172.36978</td><td>2.93055</td><td>G</td><td>71830.0</td><td>0.239599</td><td>SLS</td><td>17.5g</td><td>--</td><td>9</td><td>0</td><td>49</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>31</td><td>32</td><td>WISEA J113800.86+521303.8</td><td>174.50367</td><td>52.21775</td><td>G</td><td>88717.0</td><td>0.295927</td><td>SLS</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>32</td><td>33</td><td>WISEA J114100.04+384807.4</td><td>175.25022</td><td>38.80207</td><td>G</td><td>80255.0</td><td>0.267701</td><td>SLS</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>33</td><td>34</td><td>WISEA J115052.96+460448.1</td><td>177.72076</td><td>46.08006</td><td>G</td><td>86778.0</td><td>0.289461</td><td>SLS</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>53</td><td>9</td><td>7</td><td>8</td><td>0</td></tr>
+<tr><td>34</td><td>35</td><td>WISEA J115356.21+492355.4</td><td>178.48416</td><td>49.39881</td><td>G</td><td>49984.0</td><td>0.166728</td><td>SLS</td><td>17.1g</td><td>--</td><td>19</td><td>0</td><td>67</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>35</td><td>36</td><td>2MASX J11593546+1257080</td><td>179.89761</td><td>12.95205</td><td>G</td><td>79003.0</td><td>0.263525</td><td>SLS</td><td>18.3g</td><td>--</td><td>7</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>36</td><td>37</td><td>WISEA J120053.92+480007.8</td><td>180.22477</td><td>48.00213</td><td>G</td><td>83466.0</td><td>0.278413</td><td>SLS</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>70</td><td>7</td><td>5</td><td>10</td><td>0</td></tr>
+<tr><td>37</td><td>38</td><td>GMBCG J180.22479+48.00211</td><td>180.22479</td><td>48.00211</td><td>GClstr</td><td>74948.0</td><td>0.25</td><td>PUN</td><td></td><td>--</td><td>6</td><td>0</td><td>0</td><td>3</td><td>4</td><td>0</td><td>0</td></tr>
+<tr><td>38</td><td>39</td><td>WISEA J121644.33+122450.5</td><td>184.18477</td><td>12.41404</td><td>G</td><td>77030.0</td><td>0.256944</td><td>SLS</td><td>18.3g</td><td>--</td><td>5</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>39</td><td>40</td><td>WISEA J122100.50+482729.1</td><td>185.25209</td><td>48.45807</td><td>G</td><td>89836.0</td><td>0.299659</td><td>SLS</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>61</td><td>8</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>40</td><td>41</td><td>WISEA J123215.19+102119.1</td><td>188.06311</td><td>10.35535</td><td>G</td><td>49729.0</td><td>0.165877</td><td>SLS</td><td>17.2g</td><td>--</td><td>19</td><td>0</td><td>66</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>41</td><td>42</td><td>WISEA J123431.08+515629.7</td><td>188.62952</td><td>51.94146</td><td>G</td><td>88714.0</td><td>0.295917</td><td>SLS</td><td>18.1g</td><td>--</td><td>29</td><td>0</td><td>64</td><td>10</td><td>11</td><td>10</td><td>0</td></tr>
+<tr><td>42</td><td>43</td><td>WISEA J123746.63+481227.5</td><td>189.44448</td><td>48.20767</td><td>G</td><td>81679.0</td><td>0.272452</td><td>SLS</td><td>18.2g</td><td>--</td><td>8</td><td>0</td><td>65</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>43</td><td>44</td><td>WISEA J131039.32+223502.8</td><td>197.66385</td><td>22.58407</td><td>G</td><td>69320.0</td><td>0.231225</td><td>SLS</td><td>18.1g</td><td>--</td><td>12</td><td>0</td><td>48</td><td>8</td><td>5</td><td>6</td><td>1</td></tr>
+<tr><td>44</td><td>45</td><td>WISEA J132757.52+334529.3</td><td>201.98969</td><td>33.75806</td><td>G</td><td>74623.0</td><td>0.248916</td><td>SLS</td><td>17.7g</td><td>--</td><td>15</td><td>0</td><td>88</td><td>12</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>45</td><td>46</td><td>WISEA J134228.33+115734.5</td><td>205.61806</td><td>11.95954</td><td>G</td><td>83561.0</td><td>0.27873</td><td>SLS</td><td>19.0g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>46</td><td>47</td><td>WISEA J134355.49+244048.1</td><td>205.98124</td><td>24.68001</td><td>G</td><td>41147.0</td><td>0.13725</td><td>SLS</td><td>17.81</td><td>--</td><td>20</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
 <tr><td>47</td><td>48</td><td>SDSSCGB 16827</td><td>206.99833</td><td>32.44039</td><td>GGroup</td><td>--</td><td>--</td><td></td><td>18.44</td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>48</td><td>49</td><td>2MASX J13475962+3227100</td><td>206.99841</td><td>32.45286</td><td>G</td><td>66870.0</td><td>0.223055</td><td>SPEC</td><td>18.1g</td><td>--</td><td>11</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>49</td><td>50</td><td>WISEA J135546.08+025456.0</td><td>208.942</td><td>2.91553</td><td>G</td><td>71602.0</td><td>0.238837</td><td>SPEC</td><td>18.7g</td><td>--</td><td>11</td><td>0</td><td>51</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>50</td><td>51</td><td>WISEA J140138.37+263527.6</td><td>210.40991</td><td>26.591</td><td>G</td><td>85128.0</td><td>0.283958</td><td>SPEC</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>30</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
-<tr><td>51</td><td>52</td><td>2MASS J14175497+2704341</td><td>214.47905</td><td>27.07624</td><td>G</td><td>47226.0</td><td>0.15753</td><td>SPEC</td><td>16.9g</td><td>--</td><td>17</td><td>0</td><td>25</td><td>6</td><td>6</td><td>4</td><td>0</td></tr>
-<tr><td>52</td><td>53</td><td>WISEA J143447.88+020228.8</td><td>218.69942</td><td>2.04129</td><td>G</td><td>83914.0</td><td>0.279907</td><td>SPEC</td><td>18.6g</td><td>--</td><td>10</td><td>0</td><td>62</td><td>9</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>53</td><td>54</td><td>WISEA J144728.35+590831.9</td><td>221.86807</td><td>59.14209</td><td>G</td><td>73602.0</td><td>0.245509</td><td>SPEC</td><td>18.3g</td><td>--</td><td>15</td><td>0</td><td>70</td><td>11</td><td>8</td><td>10</td><td>0</td></tr>
-<tr><td>54</td><td>55</td><td>WISEA J153619.01+452247.7</td><td>234.07909</td><td>45.37968</td><td>G</td><td>70804.0</td><td>0.236177</td><td>SPEC</td><td>18.1g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>55</td><td>56</td><td>WISEA J154307.78+193751.7</td><td>235.78241</td><td>19.63104</td><td>G</td><td>68774.0</td><td>0.229405</td><td>SPEC</td><td>17.0g</td><td>--</td><td>39</td><td>1</td><td>50</td><td>18</td><td>16</td><td>6</td><td>0</td></tr>
-<tr><td>56</td><td>57</td><td>WISEA J154950.90+234444.0</td><td>237.46216</td><td>23.7456</td><td>G</td><td>78570.0</td><td>0.262082</td><td>SPEC</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>31</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
-<tr><td>57</td><td>58</td><td>GMBCG J240.41924+27.30444</td><td>240.41924</td><td>27.30444</td><td>GClstr</td><td>57860.0</td><td>0.193</td><td>PHOT</td><td></td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
-<tr><td>58</td><td>59</td><td>2MASX J16014061+2718161</td><td>240.41924</td><td>27.30443</td><td>G</td><td>49285.0</td><td>0.164398</td><td>SPEC</td><td>16.7g</td><td>--</td><td>22</td><td>0</td><td>54</td><td>7</td><td>7</td><td>10</td><td>1</td></tr>
-<tr><td>59</td><td>60</td><td>WISEA J163945.96+460905.8</td><td>249.94148</td><td>46.1517</td><td>G</td><td>74087.0</td><td>0.247128</td><td>SPEC</td><td>18.3g</td><td>--</td><td>12</td><td>0</td><td>70</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>60</td><td>61</td><td>WISEA J173406.17+602919.1</td><td>263.52577</td><td>60.48859</td><td>G</td><td>82730.0</td><td>0.275956</td><td>SPEC</td><td>18.5g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>61</td><td>62</td><td>SDSSCGB 59704</td><td>263.53292</td><td>60.48197</td><td>GGroup</td><td>82743.0</td><td>0.276</td><td></td><td>17.20</td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+<tr><td>48</td><td>49</td><td>2MASX J13475962+3227100</td><td>206.99841</td><td>32.45286</td><td>G</td><td>66870.0</td><td>0.223055</td><td>SLS</td><td>18.1g</td><td>--</td><td>11</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>49</td><td>50</td><td>WISEA J135546.08+025456.0</td><td>208.942</td><td>2.91553</td><td>G</td><td>71602.0</td><td>0.238837</td><td>SLS</td><td>18.7g</td><td>--</td><td>11</td><td>0</td><td>51</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>50</td><td>51</td><td>WISEA J140138.37+263527.6</td><td>210.40991</td><td>26.591</td><td>G</td><td>85128.0</td><td>0.283958</td><td>SLS</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>30</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>51</td><td>52</td><td>2MASS J14175497+2704341</td><td>214.47905</td><td>27.07624</td><td>G</td><td>47226.0</td><td>0.15753</td><td>SLS</td><td>16.9g</td><td>--</td><td>17</td><td>0</td><td>25</td><td>6</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>52</td><td>53</td><td>WISEA J143447.88+020228.8</td><td>218.69942</td><td>2.04129</td><td>G</td><td>83914.0</td><td>0.279907</td><td>SLS</td><td>18.6g</td><td>--</td><td>10</td><td>0</td><td>62</td><td>9</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>53</td><td>54</td><td>WISEA J144728.35+590831.9</td><td>221.86807</td><td>59.14209</td><td>G</td><td>73602.0</td><td>0.245509</td><td>SLS</td><td>18.3g</td><td>--</td><td>15</td><td>0</td><td>70</td><td>11</td><td>8</td><td>10</td><td>0</td></tr>
+<tr><td>54</td><td>55</td><td>WISEA J153619.01+452247.7</td><td>234.07909</td><td>45.37968</td><td>G</td><td>70804.0</td><td>0.236177</td><td>SLS</td><td>18.1g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>55</td><td>56</td><td>WISEA J154307.78+193751.7</td><td>235.78241</td><td>19.63104</td><td>G</td><td>68774.0</td><td>0.229405</td><td>SLS</td><td>17.0g</td><td>--</td><td>43</td><td>1</td><td>50</td><td>21</td><td>18</td><td>6</td><td>0</td></tr>
+<tr><td>56</td><td>57</td><td>WISEA J154950.90+234444.0</td><td>237.46216</td><td>23.7456</td><td>G</td><td>78570.0</td><td>0.262082</td><td>SLS</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>31</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>57</td><td>58</td><td>GMBCG J240.41924+27.30444</td><td>240.41924</td><td>27.30444</td><td>GClstr</td><td>57860.0</td><td>0.193</td><td>PUN</td><td></td><td>--</td><td>4</td><td>0</td><td>0</td><td>2</td><td>2</td><td>0</td><td>0</td></tr>
+<tr><td>58</td><td>59</td><td>2MASX J16014061+2718161</td><td>240.41924</td><td>27.30443</td><td>G</td><td>49285.0</td><td>0.164398</td><td>SLS</td><td>16.7g</td><td>--</td><td>22</td><td>0</td><td>54</td><td>7</td><td>7</td><td>10</td><td>1</td></tr>
+<tr><td>59</td><td>60</td><td>WISEA J163945.96+460905.8</td><td>249.94148</td><td>46.1517</td><td>G</td><td>74087.0</td><td>0.247128</td><td>SLS</td><td>18.3g</td><td>--</td><td>12</td><td>0</td><td>70</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>60</td><td>61</td><td>WISEA J173406.17+602919.1</td><td>263.52577</td><td>60.48859</td><td>G</td><td>82730.0</td><td>0.275956</td><td>SLS</td><td>18.5g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>61</td><td>62</td><td>SDSSCGB 59704</td><td>263.53292</td><td>60.48197</td><td>GGroup</td><td>82743.0</td><td>0.276</td><td>SST</td><td>17.20</td><td>--</td><td>3</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -727,14 +592,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140393296853408-204777').dataTable()");
+    console.log("$('#table139962596448224-801183').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140393296853408-204777').dataTable({
+    $('#table139962596448224-801183').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -785,7 +650,7 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 <tr><td>GGroup</td></tr>
 </table></div></div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_output_scroll docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Keep only the galaxies from the list</span>
 <span class="n">galaxies</span> <span class="o">=</span> <span class="n">objects_in_paper</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">objects_in_paper</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="s1">&#39;G&#39;</span><span class="p">]</span>
@@ -796,62 +661,62 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><i>Table length=53</i>
-<table id="table140392484941728-657564" class="table-striped table-bordered table-condensed">
+<table id="table139962596724160-2292" class="table-striped table-bordered table-condensed">
 <thead><tr><th>idx</th><th>No.</th><th>Object Name</th><th>RA</th><th>DEC</th><th>Type</th><th>Velocity</th><th>Redshift</th><th>Redshift Flag</th><th>Magnitude and Filter</th><th>Separation</th><th>References</th><th>Notes</th><th>Photometry Points</th><th>Positions</th><th>Redshift Points</th><th>Diameter Points</th><th>Associations</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th>degrees</th><th>degrees</th><th></th><th>km / s</th><th></th><th></th><th></th><th>arcmin</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
-<tr><td>0</td><td>1</td><td>WISEA J001550.14-100242.3</td><td>3.95892</td><td>-10.04511</td><td>G</td><td>52766.0</td><td>0.17601</td><td>SPEC</td><td>17.5g</td><td>--</td><td>15</td><td>0</td><td>63</td><td>8</td><td>7</td><td>10</td><td>0</td></tr>
-<tr><td>1</td><td>2</td><td>WISEA J003807.80-010936.7</td><td>9.53252</td><td>-1.16024</td><td>G</td><td>62442.0</td><td>0.208284</td><td>SPEC</td><td>18.0g</td><td>--</td><td>16</td><td>0</td><td>72</td><td>12</td><td>9</td><td>10</td><td>0</td></tr>
-<tr><td>2</td><td>3</td><td>WISEA J040422.92-054134.8</td><td>61.09548</td><td>-5.69303</td><td>G</td><td>75113.0</td><td>0.250549</td><td>SPEC</td><td>18.6g</td><td>--</td><td>7</td><td>0</td><td>61</td><td>10</td><td>7</td><td>8</td><td>0</td></tr>
-<tr><td>3</td><td>4</td><td>WISEA J073806.16+282359.6</td><td>114.52568</td><td>28.39995</td><td>G</td><td>69225.0</td><td>0.230909</td><td>SPEC</td><td>18.0g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>4</td><td>5</td><td>2MASX J07550424+1353261</td><td>118.76776</td><td>13.89065</td><td>G</td><td>66746.0</td><td>0.22264</td><td>SPEC</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>38</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>5</td><td>6</td><td>WISEA J082655.11+181147.7</td><td>126.72969</td><td>18.19665</td><td>G</td><td>79580.0</td><td>0.265449</td><td>SPEC</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>46</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>6</td><td>7</td><td>2MASX J08542169+0449308</td><td>133.59033</td><td>4.82511</td><td>G</td><td>47005.0</td><td>0.156793</td><td>SPEC</td><td>16.7g</td><td>--</td><td>18</td><td>0</td><td>58</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>7</td><td>9</td><td>2MASX J09094480+2226078</td><td>137.4367</td><td>22.43538</td><td>G</td><td>85557.0</td><td>0.285388</td><td>SPEC</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>30</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>8</td><td>10</td><td>2MASX J09260805+2405242</td><td>141.53357</td><td>24.09004</td><td>G</td><td>66672.0</td><td>0.222393</td><td>SPEC</td><td>17.8g</td><td>--</td><td>16</td><td>0</td><td>32</td><td>7</td><td>9</td><td>6</td><td>0</td></tr>
-<tr><td>9</td><td>12</td><td>WISEA J093347.77+211436.7</td><td>143.44901</td><td>21.24346</td><td>G</td><td>51620.0</td><td>0.172186</td><td>SPEC</td><td>16.9g</td><td>--</td><td>46</td><td>0</td><td>51</td><td>18</td><td>14</td><td>6</td><td>1</td></tr>
-<tr><td>10</td><td>13</td><td>WISEA J093622.14+390628.9</td><td>144.09222</td><td>39.10801</td><td>G</td><td>84821.0</td><td>0.282931</td><td>SPEC</td><td>18.5g</td><td>--</td><td>6</td><td>0</td><td>66</td><td>7</td><td>3</td><td>10</td><td>0</td></tr>
-<tr><td>11</td><td>15</td><td>CGCG 122-067</td><td>146.22351</td><td>22.88512</td><td>G</td><td>26686.0</td><td>0.089016</td><td>SPEC</td><td>15.3g</td><td>--</td><td>31</td><td>0</td><td>49</td><td>10</td><td>10</td><td>8</td><td>0</td></tr>
-<tr><td>12</td><td>16</td><td>WISEA J094700.08+254045.8</td><td>146.75035</td><td>25.67938</td><td>G</td><td>32690.0</td><td>0.109043</td><td>SPEC</td><td>15.8g</td><td>--</td><td>21</td><td>0</td><td>46</td><td>7</td><td>7</td><td>6</td><td>0</td></tr>
-<tr><td>13</td><td>17</td><td>SDSS J095727.02+083501.7</td><td>149.36259</td><td>8.58383</td><td>G</td><td>76903.0</td><td>0.256521</td><td>SPEC</td><td>18.3g</td><td>--</td><td>8</td><td>0</td><td>39</td><td>5</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>14</td><td>18</td><td>WISEA J100356.88+382902.1</td><td>150.98703</td><td>38.48391</td><td>G</td><td>77525.0</td><td>0.258596</td><td>SPEC</td><td>17.8g</td><td>--</td><td>8</td><td>0</td><td>57</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
-<tr><td>15</td><td>19</td><td>WISEA J100416.04+295844.1</td><td>151.06683</td><td>29.97899</td><td>G</td><td>89471.0</td><td>0.298443</td><td>SPEC</td><td>18.7g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>16</td><td>20</td><td>WISEA J100956.35+261132.0</td><td>152.48475</td><td>26.19223</td><td>G</td><td>72216.0</td><td>0.240886</td><td>SPEC</td><td>18.1g</td><td>--</td><td>13</td><td>0</td><td>46</td><td>7</td><td>4</td><td>6</td><td>0</td></tr>
-<tr><td>17</td><td>22</td><td>WISEA J101007.05+325329.0</td><td>152.52936</td><td>32.89141</td><td>G</td><td>86909.0</td><td>0.289896</td><td>SPEC</td><td>18.7g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>18</td><td>23</td><td>2MASS J10160396+3037481</td><td>154.01655</td><td>30.62998</td><td>G</td><td>75520.0</td><td>0.251906</td><td>SPEC</td><td>18.7g</td><td>--</td><td>6</td><td>0</td><td>49</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
-<tr><td>19</td><td>24</td><td>WISEA J102154.85+072415.5</td><td>155.47856</td><td>7.40432</td><td>G</td><td>87123.0</td><td>0.290611</td><td>SPEC</td><td>18.4g</td><td>--</td><td>6</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>20</td><td>25</td><td>WISEA J103015.74-010607.0</td><td>157.56561</td><td>-1.10198</td><td>G</td><td>84625.0</td><td>0.282277</td><td>SPEC</td><td>18.3g</td><td>--</td><td>11</td><td>0</td><td>62</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>21</td><td>26</td><td>2MASX J10304263+0418219</td><td>157.67753</td><td>4.30602</td><td>G</td><td>48244.0</td><td>0.160924</td><td>SPEC</td><td>16.8g</td><td>--</td><td>24</td><td>0</td><td>59</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>22</td><td>28</td><td>2MASX J10405643-0103584</td><td>160.23509</td><td>-1.06632</td><td>G</td><td>75021.0</td><td>0.250242</td><td>SPEC</td><td>18.2g</td><td>--</td><td>17</td><td>0</td><td>51</td><td>9</td><td>9</td><td>10</td><td>0</td></tr>
-<tr><td>23</td><td>29</td><td>WISEA J104724.97+230917.4</td><td>161.85435</td><td>23.15474</td><td>G</td><td>54729.0</td><td>0.182556</td><td>SPEC</td><td>18.46</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>24</td><td>30</td><td>WISEA J111917.41+141946.5</td><td>169.8226</td><td>14.3296</td><td>G</td><td>43101.0</td><td>0.143771</td><td>SPEC</td><td>16.6g</td><td>--</td><td>20</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>25</td><td>31</td><td>2MASS J11292875+0255498</td><td>172.36978</td><td>2.93055</td><td>G</td><td>71830.0</td><td>0.239599</td><td>SPEC</td><td>17.5g</td><td>--</td><td>9</td><td>0</td><td>49</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>26</td><td>32</td><td>WISEA J113800.86+521303.8</td><td>174.50367</td><td>52.21775</td><td>G</td><td>88717.0</td><td>0.295927</td><td>SPEC</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>27</td><td>33</td><td>WISEA J114100.04+384807.4</td><td>175.25022</td><td>38.80207</td><td>G</td><td>80255.0</td><td>0.267701</td><td>SPEC</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>28</td><td>34</td><td>WISEA J115052.96+460448.1</td><td>177.72076</td><td>46.08006</td><td>G</td><td>86778.0</td><td>0.289461</td><td>SPEC</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>53</td><td>9</td><td>7</td><td>8</td><td>0</td></tr>
-<tr><td>29</td><td>35</td><td>WISEA J115356.21+492355.4</td><td>178.48416</td><td>49.39881</td><td>G</td><td>49984.0</td><td>0.166728</td><td>SPEC</td><td>17.1g</td><td>--</td><td>19</td><td>0</td><td>67</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>30</td><td>36</td><td>2MASX J11593546+1257080</td><td>179.89761</td><td>12.95205</td><td>G</td><td>79003.0</td><td>0.263525</td><td>SPEC</td><td>18.3g</td><td>--</td><td>7</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>31</td><td>37</td><td>WISEA J120053.92+480007.8</td><td>180.22477</td><td>48.00213</td><td>G</td><td>83466.0</td><td>0.278413</td><td>SPEC</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>70</td><td>7</td><td>5</td><td>10</td><td>0</td></tr>
-<tr><td>32</td><td>39</td><td>WISEA J121644.33+122450.5</td><td>184.18477</td><td>12.41404</td><td>G</td><td>77030.0</td><td>0.256944</td><td>SPEC</td><td>18.3g</td><td>--</td><td>5</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>33</td><td>40</td><td>WISEA J122100.50+482729.1</td><td>185.25209</td><td>48.45807</td><td>G</td><td>89836.0</td><td>0.299659</td><td>SPEC</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>61</td><td>8</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>34</td><td>41</td><td>WISEA J123215.19+102119.1</td><td>188.06311</td><td>10.35535</td><td>G</td><td>49729.0</td><td>0.165877</td><td>SPEC</td><td>17.2g</td><td>--</td><td>19</td><td>0</td><td>66</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
-<tr><td>35</td><td>42</td><td>WISEA J123431.08+515629.7</td><td>188.62952</td><td>51.94146</td><td>G</td><td>88714.0</td><td>0.295917</td><td>SPEC</td><td>18.1g</td><td>--</td><td>29</td><td>0</td><td>64</td><td>10</td><td>11</td><td>10</td><td>0</td></tr>
-<tr><td>36</td><td>43</td><td>WISEA J123746.63+481227.5</td><td>189.44448</td><td>48.20767</td><td>G</td><td>81679.0</td><td>0.272452</td><td>SPEC</td><td>18.2g</td><td>--</td><td>8</td><td>0</td><td>65</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>37</td><td>44</td><td>WISEA J131039.32+223502.8</td><td>197.66385</td><td>22.58407</td><td>G</td><td>69320.0</td><td>0.231225</td><td>SPEC</td><td>18.1g</td><td>--</td><td>12</td><td>0</td><td>48</td><td>8</td><td>5</td><td>6</td><td>1</td></tr>
-<tr><td>38</td><td>45</td><td>WISEA J132757.52+334529.3</td><td>201.98969</td><td>33.75806</td><td>G</td><td>74623.0</td><td>0.248916</td><td>SPEC</td><td>17.7g</td><td>--</td><td>15</td><td>0</td><td>88</td><td>12</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>39</td><td>46</td><td>WISEA J134228.33+115734.5</td><td>205.61806</td><td>11.95954</td><td>G</td><td>83561.0</td><td>0.27873</td><td>SPEC</td><td>19.0g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>40</td><td>47</td><td>WISEA J134355.49+244048.1</td><td>205.98124</td><td>24.68001</td><td>G</td><td>41147.0</td><td>0.13725</td><td>SPEC</td><td>17.81</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
-<tr><td>41</td><td>49</td><td>2MASX J13475962+3227100</td><td>206.99841</td><td>32.45286</td><td>G</td><td>66870.0</td><td>0.223055</td><td>SPEC</td><td>18.1g</td><td>--</td><td>11</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>42</td><td>50</td><td>WISEA J135546.08+025456.0</td><td>208.942</td><td>2.91553</td><td>G</td><td>71602.0</td><td>0.238837</td><td>SPEC</td><td>18.7g</td><td>--</td><td>11</td><td>0</td><td>51</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>43</td><td>51</td><td>WISEA J140138.37+263527.6</td><td>210.40991</td><td>26.591</td><td>G</td><td>85128.0</td><td>0.283958</td><td>SPEC</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>30</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
-<tr><td>44</td><td>52</td><td>2MASS J14175497+2704341</td><td>214.47905</td><td>27.07624</td><td>G</td><td>47226.0</td><td>0.15753</td><td>SPEC</td><td>16.9g</td><td>--</td><td>17</td><td>0</td><td>25</td><td>6</td><td>6</td><td>4</td><td>0</td></tr>
-<tr><td>45</td><td>53</td><td>WISEA J143447.88+020228.8</td><td>218.69942</td><td>2.04129</td><td>G</td><td>83914.0</td><td>0.279907</td><td>SPEC</td><td>18.6g</td><td>--</td><td>10</td><td>0</td><td>62</td><td>9</td><td>5</td><td>8</td><td>0</td></tr>
-<tr><td>46</td><td>54</td><td>WISEA J144728.35+590831.9</td><td>221.86807</td><td>59.14209</td><td>G</td><td>73602.0</td><td>0.245509</td><td>SPEC</td><td>18.3g</td><td>--</td><td>15</td><td>0</td><td>70</td><td>11</td><td>8</td><td>10</td><td>0</td></tr>
-<tr><td>47</td><td>55</td><td>WISEA J153619.01+452247.7</td><td>234.07909</td><td>45.37968</td><td>G</td><td>70804.0</td><td>0.236177</td><td>SPEC</td><td>18.1g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
-<tr><td>48</td><td>56</td><td>WISEA J154307.78+193751.7</td><td>235.78241</td><td>19.63104</td><td>G</td><td>68774.0</td><td>0.229405</td><td>SPEC</td><td>17.0g</td><td>--</td><td>39</td><td>1</td><td>50</td><td>18</td><td>16</td><td>6</td><td>0</td></tr>
-<tr><td>49</td><td>57</td><td>WISEA J154950.90+234444.0</td><td>237.46216</td><td>23.7456</td><td>G</td><td>78570.0</td><td>0.262082</td><td>SPEC</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>31</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
-<tr><td>50</td><td>59</td><td>2MASX J16014061+2718161</td><td>240.41924</td><td>27.30443</td><td>G</td><td>49285.0</td><td>0.164398</td><td>SPEC</td><td>16.7g</td><td>--</td><td>22</td><td>0</td><td>54</td><td>7</td><td>7</td><td>10</td><td>1</td></tr>
-<tr><td>51</td><td>60</td><td>WISEA J163945.96+460905.8</td><td>249.94148</td><td>46.1517</td><td>G</td><td>74087.0</td><td>0.247128</td><td>SPEC</td><td>18.3g</td><td>--</td><td>12</td><td>0</td><td>70</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
-<tr><td>52</td><td>61</td><td>WISEA J173406.17+602919.1</td><td>263.52577</td><td>60.48859</td><td>G</td><td>82730.0</td><td>0.275956</td><td>SPEC</td><td>18.5g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>0</td><td>1</td><td>WISEA J001550.14-100242.3</td><td>3.95892</td><td>-10.04511</td><td>G</td><td>52766.0</td><td>0.17601</td><td>SLS</td><td>17.5g</td><td>--</td><td>15</td><td>0</td><td>63</td><td>8</td><td>7</td><td>10</td><td>0</td></tr>
+<tr><td>1</td><td>2</td><td>WISEA J003807.80-010936.7</td><td>9.53252</td><td>-1.16024</td><td>G</td><td>62442.0</td><td>0.208284</td><td>SLS</td><td>18.0g</td><td>--</td><td>16</td><td>0</td><td>72</td><td>12</td><td>9</td><td>10</td><td>0</td></tr>
+<tr><td>2</td><td>3</td><td>WISEA J040422.92-054134.8</td><td>61.09548</td><td>-5.69303</td><td>G</td><td>75113.0</td><td>0.250549</td><td>SLS</td><td>18.6g</td><td>--</td><td>7</td><td>0</td><td>61</td><td>10</td><td>7</td><td>8</td><td>0</td></tr>
+<tr><td>3</td><td>4</td><td>WISEA J073806.16+282359.6</td><td>114.52568</td><td>28.39995</td><td>G</td><td>69225.0</td><td>0.230909</td><td>SLS</td><td>18.0g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>4</td><td>5</td><td>2MASX J07550424+1353261</td><td>118.76776</td><td>13.89065</td><td>G</td><td>66746.0</td><td>0.22264</td><td>SLS</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>38</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>5</td><td>6</td><td>WISEA J082655.11+181147.7</td><td>126.72969</td><td>18.19665</td><td>G</td><td>79580.0</td><td>0.265449</td><td>SLS</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>46</td><td>7</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>6</td><td>7</td><td>2MASX J08542169+0449308</td><td>133.59033</td><td>4.82511</td><td>G</td><td>47005.0</td><td>0.156793</td><td>SLS</td><td>16.7g</td><td>--</td><td>18</td><td>0</td><td>58</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>7</td><td>9</td><td>2MASX J09094480+2226078</td><td>137.4367</td><td>22.43538</td><td>G</td><td>85557.0</td><td>0.285388</td><td>SLS</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>30</td><td>5</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>8</td><td>10</td><td>2MASX J09260805+2405242</td><td>141.53357</td><td>24.09004</td><td>G</td><td>66672.0</td><td>0.222393</td><td>SLS</td><td>17.8g</td><td>--</td><td>16</td><td>0</td><td>32</td><td>7</td><td>9</td><td>6</td><td>0</td></tr>
+<tr><td>9</td><td>12</td><td>WISEA J093347.77+211436.7</td><td>143.44901</td><td>21.24346</td><td>G</td><td>51620.0</td><td>0.172186</td><td>SLS</td><td>16.9g</td><td>--</td><td>48</td><td>0</td><td>51</td><td>20</td><td>15</td><td>6</td><td>1</td></tr>
+<tr><td>10</td><td>13</td><td>WISEA J093622.14+390628.9</td><td>144.09222</td><td>39.10801</td><td>G</td><td>84821.0</td><td>0.282931</td><td>SLS</td><td>18.5g</td><td>--</td><td>6</td><td>0</td><td>66</td><td>7</td><td>3</td><td>10</td><td>0</td></tr>
+<tr><td>11</td><td>15</td><td>CGCG 122-067</td><td>146.22351</td><td>22.88512</td><td>G</td><td>26686.0</td><td>0.089016</td><td>SLS</td><td>15.3g</td><td>--</td><td>33</td><td>0</td><td>49</td><td>12</td><td>11</td><td>8</td><td>0</td></tr>
+<tr><td>12</td><td>16</td><td>WISEA J094700.08+254045.8</td><td>146.75035</td><td>25.67938</td><td>G</td><td>32690.0</td><td>0.109043</td><td>SLS</td><td>15.8g</td><td>--</td><td>21</td><td>0</td><td>46</td><td>7</td><td>7</td><td>6</td><td>0</td></tr>
+<tr><td>13</td><td>17</td><td>SDSS J095727.02+083501.7</td><td>149.36259</td><td>8.58383</td><td>G</td><td>76903.0</td><td>0.256521</td><td>SLS</td><td>18.3g</td><td>--</td><td>8</td><td>0</td><td>39</td><td>5</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>14</td><td>18</td><td>WISEA J100356.88+382902.1</td><td>150.98703</td><td>38.48391</td><td>G</td><td>77525.0</td><td>0.258596</td><td>SLS</td><td>17.8g</td><td>--</td><td>8</td><td>0</td><td>57</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
+<tr><td>15</td><td>19</td><td>WISEA J100416.04+295844.1</td><td>151.06683</td><td>29.97899</td><td>G</td><td>89471.0</td><td>0.298443</td><td>SLS</td><td>18.7g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>16</td><td>20</td><td>WISEA J100956.35+261132.0</td><td>152.48475</td><td>26.19223</td><td>G</td><td>72216.0</td><td>0.240886</td><td>SLS</td><td>18.1g</td><td>--</td><td>13</td><td>0</td><td>46</td><td>7</td><td>4</td><td>6</td><td>0</td></tr>
+<tr><td>17</td><td>22</td><td>WISEA J101007.05+325329.0</td><td>152.52936</td><td>32.89141</td><td>G</td><td>86909.0</td><td>0.289896</td><td>SLS</td><td>18.7g</td><td>--</td><td>10</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>18</td><td>23</td><td>2MASS J10160396+3037481</td><td>154.01655</td><td>30.62998</td><td>G</td><td>75520.0</td><td>0.251906</td><td>SLS</td><td>18.7g</td><td>--</td><td>6</td><td>0</td><td>49</td><td>7</td><td>4</td><td>8</td><td>0</td></tr>
+<tr><td>19</td><td>24</td><td>WISEA J102154.85+072415.5</td><td>155.47856</td><td>7.40432</td><td>G</td><td>87123.0</td><td>0.290611</td><td>SLS</td><td>18.4g</td><td>--</td><td>6</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>20</td><td>25</td><td>WISEA J103015.74-010607.0</td><td>157.56561</td><td>-1.10198</td><td>G</td><td>84625.0</td><td>0.282277</td><td>SLS</td><td>18.3g</td><td>--</td><td>11</td><td>0</td><td>62</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>21</td><td>26</td><td>2MASX J10304263+0418219</td><td>157.67753</td><td>4.30602</td><td>G</td><td>48244.0</td><td>0.160924</td><td>SLS</td><td>16.8g</td><td>--</td><td>24</td><td>0</td><td>59</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>22</td><td>28</td><td>2MASX J10405643-0103584</td><td>160.23509</td><td>-1.06632</td><td>G</td><td>75021.0</td><td>0.250242</td><td>SLS</td><td>18.2g</td><td>--</td><td>17</td><td>0</td><td>51</td><td>9</td><td>9</td><td>10</td><td>0</td></tr>
+<tr><td>23</td><td>29</td><td>WISEA J104724.97+230917.4</td><td>161.85435</td><td>23.15474</td><td>G</td><td>54729.0</td><td>0.182556</td><td>SLS</td><td>18.46</td><td>--</td><td>19</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>24</td><td>30</td><td>WISEA J111917.41+141946.5</td><td>169.8226</td><td>14.3296</td><td>G</td><td>43101.0</td><td>0.143771</td><td>SLS</td><td>16.6g</td><td>--</td><td>20</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>25</td><td>31</td><td>2MASS J11292875+0255498</td><td>172.36978</td><td>2.93055</td><td>G</td><td>71830.0</td><td>0.239599</td><td>SLS</td><td>17.5g</td><td>--</td><td>9</td><td>0</td><td>49</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>26</td><td>32</td><td>WISEA J113800.86+521303.8</td><td>174.50367</td><td>52.21775</td><td>G</td><td>88717.0</td><td>0.295927</td><td>SLS</td><td>19.0g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>27</td><td>33</td><td>WISEA J114100.04+384807.4</td><td>175.25022</td><td>38.80207</td><td>G</td><td>80255.0</td><td>0.267701</td><td>SLS</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>66</td><td>8</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>28</td><td>34</td><td>WISEA J115052.96+460448.1</td><td>177.72076</td><td>46.08006</td><td>G</td><td>86778.0</td><td>0.289461</td><td>SLS</td><td>18.5g</td><td>--</td><td>10</td><td>0</td><td>53</td><td>9</td><td>7</td><td>8</td><td>0</td></tr>
+<tr><td>29</td><td>35</td><td>WISEA J115356.21+492355.4</td><td>178.48416</td><td>49.39881</td><td>G</td><td>49984.0</td><td>0.166728</td><td>SLS</td><td>17.1g</td><td>--</td><td>19</td><td>0</td><td>67</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>30</td><td>36</td><td>2MASX J11593546+1257080</td><td>179.89761</td><td>12.95205</td><td>G</td><td>79003.0</td><td>0.263525</td><td>SLS</td><td>18.3g</td><td>--</td><td>7</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>31</td><td>37</td><td>WISEA J120053.92+480007.8</td><td>180.22477</td><td>48.00213</td><td>G</td><td>83466.0</td><td>0.278413</td><td>SLS</td><td>18.4g</td><td>--</td><td>8</td><td>0</td><td>70</td><td>7</td><td>5</td><td>10</td><td>0</td></tr>
+<tr><td>32</td><td>39</td><td>WISEA J121644.33+122450.5</td><td>184.18477</td><td>12.41404</td><td>G</td><td>77030.0</td><td>0.256944</td><td>SLS</td><td>18.3g</td><td>--</td><td>5</td><td>0</td><td>55</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>33</td><td>40</td><td>WISEA J122100.50+482729.1</td><td>185.25209</td><td>48.45807</td><td>G</td><td>89836.0</td><td>0.299659</td><td>SLS</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>61</td><td>8</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>34</td><td>41</td><td>WISEA J123215.19+102119.1</td><td>188.06311</td><td>10.35535</td><td>G</td><td>49729.0</td><td>0.165877</td><td>SLS</td><td>17.2g</td><td>--</td><td>19</td><td>0</td><td>66</td><td>9</td><td>6</td><td>10</td><td>0</td></tr>
+<tr><td>35</td><td>42</td><td>WISEA J123431.08+515629.7</td><td>188.62952</td><td>51.94146</td><td>G</td><td>88714.0</td><td>0.295917</td><td>SLS</td><td>18.1g</td><td>--</td><td>29</td><td>0</td><td>64</td><td>10</td><td>11</td><td>10</td><td>0</td></tr>
+<tr><td>36</td><td>43</td><td>WISEA J123746.63+481227.5</td><td>189.44448</td><td>48.20767</td><td>G</td><td>81679.0</td><td>0.272452</td><td>SLS</td><td>18.2g</td><td>--</td><td>8</td><td>0</td><td>65</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>37</td><td>44</td><td>WISEA J131039.32+223502.8</td><td>197.66385</td><td>22.58407</td><td>G</td><td>69320.0</td><td>0.231225</td><td>SLS</td><td>18.1g</td><td>--</td><td>12</td><td>0</td><td>48</td><td>8</td><td>5</td><td>6</td><td>1</td></tr>
+<tr><td>38</td><td>45</td><td>WISEA J132757.52+334529.3</td><td>201.98969</td><td>33.75806</td><td>G</td><td>74623.0</td><td>0.248916</td><td>SLS</td><td>17.7g</td><td>--</td><td>15</td><td>0</td><td>88</td><td>12</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>39</td><td>46</td><td>WISEA J134228.33+115734.5</td><td>205.61806</td><td>11.95954</td><td>G</td><td>83561.0</td><td>0.27873</td><td>SLS</td><td>19.0g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>40</td><td>47</td><td>WISEA J134355.49+244048.1</td><td>205.98124</td><td>24.68001</td><td>G</td><td>41147.0</td><td>0.13725</td><td>SLS</td><td>17.81</td><td>--</td><td>20</td><td>0</td><td>46</td><td>8</td><td>6</td><td>6</td><td>0</td></tr>
+<tr><td>41</td><td>49</td><td>2MASX J13475962+3227100</td><td>206.99841</td><td>32.45286</td><td>G</td><td>66870.0</td><td>0.223055</td><td>SLS</td><td>18.1g</td><td>--</td><td>11</td><td>0</td><td>54</td><td>6</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>42</td><td>50</td><td>WISEA J135546.08+025456.0</td><td>208.942</td><td>2.91553</td><td>G</td><td>71602.0</td><td>0.238837</td><td>SLS</td><td>18.7g</td><td>--</td><td>11</td><td>0</td><td>51</td><td>7</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>43</td><td>51</td><td>WISEA J140138.37+263527.6</td><td>210.40991</td><td>26.591</td><td>G</td><td>85128.0</td><td>0.283958</td><td>SLS</td><td>18.7g</td><td>--</td><td>8</td><td>0</td><td>30</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>44</td><td>52</td><td>2MASS J14175497+2704341</td><td>214.47905</td><td>27.07624</td><td>G</td><td>47226.0</td><td>0.15753</td><td>SLS</td><td>16.9g</td><td>--</td><td>17</td><td>0</td><td>25</td><td>6</td><td>6</td><td>4</td><td>0</td></tr>
+<tr><td>45</td><td>53</td><td>WISEA J143447.88+020228.8</td><td>218.69942</td><td>2.04129</td><td>G</td><td>83914.0</td><td>0.279907</td><td>SLS</td><td>18.6g</td><td>--</td><td>10</td><td>0</td><td>62</td><td>9</td><td>5</td><td>8</td><td>0</td></tr>
+<tr><td>46</td><td>54</td><td>WISEA J144728.35+590831.9</td><td>221.86807</td><td>59.14209</td><td>G</td><td>73602.0</td><td>0.245509</td><td>SLS</td><td>18.3g</td><td>--</td><td>15</td><td>0</td><td>70</td><td>11</td><td>8</td><td>10</td><td>0</td></tr>
+<tr><td>47</td><td>55</td><td>WISEA J153619.01+452247.7</td><td>234.07909</td><td>45.37968</td><td>G</td><td>70804.0</td><td>0.236177</td><td>SLS</td><td>18.1g</td><td>--</td><td>9</td><td>0</td><td>57</td><td>7</td><td>3</td><td>8</td><td>0</td></tr>
+<tr><td>48</td><td>56</td><td>WISEA J154307.78+193751.7</td><td>235.78241</td><td>19.63104</td><td>G</td><td>68774.0</td><td>0.229405</td><td>SLS</td><td>17.0g</td><td>--</td><td>43</td><td>1</td><td>50</td><td>21</td><td>18</td><td>6</td><td>0</td></tr>
+<tr><td>49</td><td>57</td><td>WISEA J154950.90+234444.0</td><td>237.46216</td><td>23.7456</td><td>G</td><td>78570.0</td><td>0.262082</td><td>SLS</td><td>18.5g</td><td>--</td><td>7</td><td>0</td><td>31</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
+<tr><td>50</td><td>59</td><td>2MASX J16014061+2718161</td><td>240.41924</td><td>27.30443</td><td>G</td><td>49285.0</td><td>0.164398</td><td>SLS</td><td>16.7g</td><td>--</td><td>22</td><td>0</td><td>54</td><td>7</td><td>7</td><td>10</td><td>1</td></tr>
+<tr><td>51</td><td>60</td><td>WISEA J163945.96+460905.8</td><td>249.94148</td><td>46.1517</td><td>G</td><td>74087.0</td><td>0.247128</td><td>SLS</td><td>18.3g</td><td>--</td><td>12</td><td>0</td><td>70</td><td>8</td><td>4</td><td>10</td><td>0</td></tr>
+<tr><td>52</td><td>61</td><td>WISEA J173406.17+602919.1</td><td>263.52577</td><td>60.48859</td><td>G</td><td>82730.0</td><td>0.275956</td><td>SLS</td><td>18.5g</td><td>--</td><td>8</td><td>0</td><td>66</td><td>7</td><td>4</td><td>10</td><td>0</td></tr>
 </table><style>table.dataTable {clear: both; width: auto !important; margin: 0 !important;}
 .dataTables_info, .dataTables_length, .dataTables_filter, .dataTables_paginate{
 display: inline-block; margin-right: 1em; }
@@ -875,14 +740,14 @@ require.config({paths: {
     datatables: 'https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min'
 }});
 require(["datatables"], function(){
-    console.log("$('#table140392484941728-657564').dataTable()");
+    console.log("$('#table139962596724160-2292').dataTable()");
     
 jQuery.extend( jQuery.fn.dataTableExt.oSort, {
     "optionalnum-asc": astropy_sort_num,
     "optionalnum-desc": function (a,b) { return -astropy_sort_num(a, b); }
 });
 
-    $('#table140392484941728-657564').dataTable({
+    $('#table139962596724160-2292').dataTable({
         order: [],
         pageLength: 50,
         lengthMenu: [[10, 25, 50, 100, 500, 1000, -1], [10, 25, 50, 100, 500, 1000, 'All']],
@@ -908,11 +773,11 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>271 result(s) found.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>268 result(s) found.
 </pre></div>
 </div>
-<div class="output text_html"><div><i>Table length=271</i>
-<table id="table140392484564560" class="table-striped table-bordered table-condensed">
+<div class="output text_html"><div><i>Table length=268</i>
+<table id="table139961698978688" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ivoid</th><th>short_name</th><th>res_title</th></tr></thead>
 <thead><tr><th>object</th><th>object</th><th>object</th></tr></thead>
 <tr><td>ivo://3crsnapshots/sia</td><td>3CRSnap.sia</td><td>3CRSnapshots Simple Image Access Service</td></tr>
@@ -921,10 +786,10 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 <tr><td>ivo://archive.stsci.edu/sia/galex</td><td>GALEX</td><td>Galaxy Evolution Explorer</td></tr>
 <tr><td>ivo://archive.stsci.edu/siap/hla</td><td>HLA</td><td>Hubble Legacy Archive</td></tr>
 <tr><td>ivo://arvo/siap</td><td>ArVO SIAP</td><td>Armenian Virtual Observatory SIAP</td></tr>
-<tr><td>ivo://astron.nl/apertif_dr1/q/apertif_dr1_continuum_images</td><td>Continuum images</td><td>M) Apertif DR1 - Continuum images</td></tr>
-<tr><td>ivo://astron.nl/apertif_dr1/q/apertif_dr1_polarization_cubes</td><td>Pol. cubes</td><td>M) Apertif DR1 - Polarization images and cubes</td></tr>
-<tr><td>ivo://astron.nl/apertif_dr1/q/apertif_dr1_spectral_cubes</td><td>Spectral cubes</td><td>M) Apertif DR1 - HI spectral cubes</td></tr>
 <tr><td>ivo://astron.nl/hetdex/lotss-dr1-img/cutout</td><td>LoTSS-DR1 Cutout</td><td>LoTSS-DR1 Image Cutout Service</td></tr>
+<tr><td>ivo://astron.nl/hetdex/lotss-dr1-img/imgs</td><td>LoTSS-DR1 images</td><td>LoTSS-DR1 Image Archive</td></tr>
+<tr><td>ivo://astron.nl/lofartier1/q_img/cutout</td><td>LoTSS-PDR Cutout</td><td>LoTSS-PDR Image Cutout Service</td></tr>
+<tr><td>ivo://astron.nl/lofartier1/q_img/imgs</td><td>LoTSS-PDR images</td><td>LoTSS-PDR Image Archive</td></tr>
 <tr><td>...</td><td>...</td><td>...</td></tr>
 <tr><td>ivo://wfau.roe.ac.uk/ukidssdr3-siap</td><td>UKIDSS DR3 SIAP</td><td>UKIDSS DR3 SIAP Service</td></tr>
 <tr><td>ivo://wfau.roe.ac.uk/ukidssdr4-siap</td><td>UKIDSS DR4 SIAP</td><td>UKIDSS DR4 SIAP Service</td></tr>
@@ -957,7 +822,7 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 </pre></div>
 </div>
 <div class="output text_html"><div><i>Table length=1</i>
-<table id="table140393296853648" class="table-striped table-bordered table-condensed">
+<table id="table139961699334608" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ivoid</th><th>short_name</th><th>res_title</th></tr></thead>
 <thead><tr><th>object</th><th>object</th><th>object</th></tr></thead>
 <tr><td>ivo://irsa.ipac/wise/images/allwise/l3a</td><td>AllWISE L3a</td><td>AllWISE Atlas (L3a) Coadd Images</td></tr>
@@ -974,7 +839,7 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pyvo.dal.sia.SIAService at 0x7fafac1f22e0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;pyvo.dal.sia.SIAService at 0x7f4b94dc1510&gt;
 </pre></div>
 </div>
 </div>
@@ -1040,7 +905,7 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=4</i>
-<table id="table140392483508176" class="table-striped table-bordered table-condensed">
+<table id="table139961694649456" class="table-striped table-bordered table-condensed">
 <thead><tr><th>sia_title</th><th>sia_url</th><th>sia_naxes</th><th>sia_fmt</th><th>sia_ra</th><th>sia_dec</th><th>sia_naxis</th><th>sia_crpix</th><th>sia_crval</th><th>sia_proj</th><th>sia_scale</th><th>sia_cd</th><th>sia_bp_id</th><th>sia_bp_ref</th><th>sia_bp_hi</th><th>sia_bp_lo</th><th>magzp</th><th>magzpunc</th><th>unc_url</th><th>cov_url</th><th>coadd_id</th></tr></thead>
 <thead><tr><th></th><th></th><th></th><th></th><th>deg</th><th>deg</th><th></th><th>pix</th><th>deg</th><th></th><th>deg / pix</th><th>deg / pix</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead>
 <thead><tr><th>object</th><th>object</th><th>int32</th><th>object</th><th>float64</th><th>float64</th><th>object</th><th>object</th><th>object</th><th>object</th><th>object</th><th>object</th><th>object</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>float64</th><th>object</th><th>object</th><th>object</th></tr></thead>
@@ -1101,10 +966,10 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafabd7baf0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b5ea76410&gt;
 </pre></div>
 </div>
-<img alt="_images/1ef6a4516b16049092c449c78325df7ac7392582565209276754dcd2276aee45.png" src="_images/1ef6a4516b16049092c449c78325df7ac7392582565209276754dcd2276aee45.png" />
+<img alt="_images/ed3ca64e29eae4d08a26ce88f704f34aa4eb1fb815ae370728b994025d238584.png" src="_images/ed3ca64e29eae4d08a26ce88f704f34aa4eb1fb815ae370728b994025d238584.png" />
 </div>
 </div>
 </section>
@@ -1126,10 +991,10 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafa0bc5c40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b518230a0&gt;
 </pre></div>
 </div>
-<img alt="_images/3215e9742771eb0b4df50335435f997631fca4ea812cb5c068c064db00c3b314.png" src="_images/3215e9742771eb0b4df50335435f997631fca4ea812cb5c068c064db00c3b314.png" />
+<img alt="_images/20a0178b968fc1671910e27096dd64c1d9c73b7c4ec1614fe60bbfde5f9c6bbe.png" src="_images/20a0178b968fc1671910e27096dd64c1d9c73b7c4ec1614fe60bbfde5f9c6bbe.png" />
 </div>
 </div>
 </section>
@@ -1149,7 +1014,7 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </pre></div>
 </div>
 <div class="output text_html"><div><i>Table length=3</i>
-<table id="table140392292495120" class="table-striped table-bordered table-condensed">
+<table id="table139961467209712" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ivoid</th><th>short_name</th><th>res_title</th></tr></thead>
 <thead><tr><th>object</th><th>object</th><th>object</th></tr></thead>
 <tr><td>ivo://archive.stsci.edu/sia/galex</td><td>GALEX</td><td>Galaxy Evolution Explorer</td></tr>
@@ -1183,7 +1048,7 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ais_270_0005_sg14-nd-int.fits.gz UV
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ais_270_0004_sg14-nd-int.fits.gz UV
 </pre></div>
 </div>
 </div>
@@ -1210,9 +1075,9 @@ W2 Coadd 0046m107_ac51 ... 0046m107_ac51
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Min: 0.0
-Max: 8.563285
-Mean: 0.0014577592
-Stdev: 0.013107345
+Max: 8.866534
+Mean: 0.0014750387
+Stdev: 0.013614772
 </pre></div>
 </div>
 </div>
@@ -1227,10 +1092,10 @@ Stdev: 0.013107345
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafa0a8b160&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b5175e260&gt;
 </pre></div>
 </div>
-<img alt="_images/0c03c0fa105786c96add6043104521486ced5a023c10a7037b99bae642ae2dce.png" src="_images/0c03c0fa105786c96add6043104521486ced5a023c10a7037b99bae642ae2dce.png" />
+<img alt="_images/c803b7915d18767e87f21fb25b88384d7ed084ebfd06f7c99f0ba7500e30d3e7.png" src="_images/c803b7915d18767e87f21fb25b88384d7ed084ebfd06f7c99f0ba7500e30d3e7.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1246,10 +1111,10 @@ Stdev: 0.013107345
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafa0a4cb80&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b51780640&gt;
 </pre></div>
 </div>
-<img alt="_images/9605445366538b1e5a64ea5640e9356563ad10797ac3a19e4bc6815b9bcf78fc.png" src="_images/9605445366538b1e5a64ea5640e9356563ad10797ac3a19e4bc6815b9bcf78fc.png" />
+<img alt="_images/a2eb40c734376aba61be2f96cfd680569a2e35c50710036aa8ae2e18fdc25da8.png" src="_images/a2eb40c734376aba61be2f96cfd680569a2e35c50710036aa8ae2e18fdc25da8.png" />
 </div>
 </div>
 </section>
@@ -1271,7 +1136,7 @@ Stdev: 0.013107345
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><div><i>Table length=21</i>
-<table id="table140392292897264" class="table-striped table-bordered table-condensed">
+<table id="table139961466267888" class="table-striped table-bordered table-condensed">
 <thead><tr><th>ivoid</th><th>short_name</th><th>res_title</th><th>source_value</th></tr></thead>
 <thead><tr><th>object</th><th>object</th><th>object</th><th>object</th></tr></thead>
 <tr><td>ivo://mast.stsci/siap/al218</td><td>VLA.AL218</td><td>VLA-A Array AL218 Texas Survey Source Snapshots (AL218)</td><td></td></tr>
@@ -1279,7 +1144,7 @@ Stdev: 0.013107345
 <tr><td>ivo://nasa.heasarc/skyview/sdss</td><td>SDSS</td><td>Sloan Digital Sky Survey g-band</td><td></td></tr>
 <tr><td>ivo://nasa.heasarc/skyview/sdssdr7</td><td>SDSSDR7</td><td>Sloan Digital Sky Survey g-band DR7</td><td></td></tr>
 <tr><td>ivo://nasa.heasarc/skyview/stripe82vla</td><td>Stripe82VLA</td><td>VLA Survey of SDSS Stripe 82</td><td></td></tr>
-<tr><td>ivo://org.gavo.dc/bgds/q/sia</td><td>bgds sia</td><td>Bochum Galactic Disk Survey (BGDS) SIAP service</td><td>2015AN....336..590H</td></tr>
+<tr><td>ivo://org.gavo.dc/bgds/q/sia</td><td>bgds sia</td><td>Bochum Galactic Disk Survey (BGDS) images</td><td>2015AN....336..590H</td></tr>
 <tr><td>ivo://sdss.jhu/services/siap-images</td><td>SDSS SIAP</td><td>Sloan Digital Sky Survey Images (Latest Release)</td><td></td></tr>
 <tr><td>ivo://sdss.jhu/services/siapdr1-images</td><td>SDSSDR1</td><td>Sloan Digital Sky Survey DR1 - Images</td><td></td></tr>
 <tr><td>ivo://sdss.jhu/services/siapdr2-images</td><td>SDSSDR2</td><td>Sloan Digital Sky Survey DR2 - Images</td><td></td></tr>
@@ -1369,10 +1234,10 @@ Stdev: 0.013107345
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 54007.000000 from DATE-OBS&#39;. [astropy.wcs.wcs]
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafa09c9a30&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b5163b040&gt;
 </pre></div>
 </div>
-<img alt="_images/24541a1c74ef2b8e54250f8114ef970aa78db53b6f4b4dec7c1c640c227856c6.png" src="_images/24541a1c74ef2b8e54250f8114ef970aa78db53b6f4b4dec7c1c640c227856c6.png" />
+<img alt="_images/5836108459f0c5f771acdc7f266b85ff072f25c52b6caeae920d9cd386158ff5.png" src="_images/5836108459f0c5f771acdc7f266b85ff072f25c52b6caeae920d9cd386158ff5.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1391,10 +1256,10 @@ Stdev: 0.013107345
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 54007.000000 from DATE-OBS&#39;. [astropy.wcs.wcs]
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7fafa088fca0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f4b51556d10&gt;
 </pre></div>
 </div>
-<img alt="_images/b47df4e021bebe434937994033ac2027d742ca700a6cd7d5aacc45752bc12cd3.png" src="_images/b47df4e021bebe434937994033ac2027d742ca700a6cd7d5aacc45752bc12cd3.png" />
+<img alt="_images/b68f4ccd1229a7306445bc86b71e2ac8751684fd1bbb9ee337bb262cfff3fafa.png" src="_images/b68f4ccd1229a7306445bc86b71e2ac8751684fd1bbb9ee337bb262cfff3fafa.png" />
 </div>
 </div>
 </section>
@@ -1521,59 +1386,128 @@ Stdev: 0.013107345
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING: FITSFixedWarning: &#39;datfix&#39; made the change &#39;Set MJD-OBS to 51465.000000 from DATE-OBS&#39;. [astropy.wcs.wcs]
 </pre></div>
 </div>
-<img alt="_images/baaca2f51da83a25cef3884cc960f433ea7424eb1e0dcbdaf127c7de424f1937.png" src="_images/baaca2f51da83a25cef3884cc960f433ea7424eb1e0dcbdaf127c7de424f1937.png" />
-<img alt="_images/dd7ef61a4a173b64af43afd13410093f6ae1a829a73fb7771d91254ff6c889db.png" src="_images/dd7ef61a4a173b64af43afd13410093f6ae1a829a73fb7771d91254ff6c889db.png" />
-<img alt="_images/c747f55129b35c632e81c43f41151f33b01f61532f9fca691bd385a3d0453f20.png" src="_images/c747f55129b35c632e81c43f41151f33b01f61532f9fca691bd385a3d0453f20.png" />
+<img alt="_images/288cd21964d47a6d5c6a4480879011dae76754d6d70093d3c49fa7b924685958.png" src="_images/288cd21964d47a6d5c6a4480879011dae76754d6d70093d3c49fa7b924685958.png" />
+<img alt="_images/4cdd38b31ecca6159df7919ed653b5930231c728ebbb1f6d71bd13b3c7aa105b.png" src="_images/4cdd38b31ecca6159df7919ed653b5930231c728ebbb1f6d71bd13b3c7aa105b.png" />
+<img alt="_images/1a051d38864bf9a990724186d64d4d34404d545d593e7d862681cacf14829efd.png" src="_images/1a051d38864bf9a990724186d64d4d34404d545d593e7d862681cacf14829efd.png" />
 </div>
 </div>
 </section>
 </section>
 
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="QuickReference.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Quick Reference</p>
-        </div>
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="QuickReference.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Quick Reference</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="UseCase_II.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="UseCase_II.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Preparing a proposal</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
-</div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By NASA-NAVO developers<br/>
-  
-      &copy; Copyright 2018-2022, NASA-NAVO developers.<br/>
-</p>
-        </footer>
-    </div>
-    
-</div>
-
-
       </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#import-the-python-modules-we-ll-be-using">1. Import the Python modules we’ll be using.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-ned-for-objects-in-this-paper">2. Search NED for objects in this paper.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#filter-the-ned-results">3. Filter the NED results.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources">4. Search the NAVO Registry for image resources.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-the-navo-registry-for-image-resources-that-will-allow-you-to-search-for-allwise-images">5. Search the NAVO Registry for image resources that will allow you to search for AllWISE images.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-allwise-image-service-that-you-are-interested-in">6. Choose the AllWISE image service that you are interested in.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-one-of-the-galaxies-in-the-ned-list">7. Choose one of the galaxies in the NED list.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#search-for-a-list-of-allwise-images-that-cover-this-galaxy">8. Search for a list of AllWISE images that cover this galaxy.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-to-table-method-to-view-the-results-as-an-astropy-table">9. Use the .to_table() method to view the results as an Astropy table.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-the-result-in-8-select-the-first-record-for-an-image-taken-in-wise-band-w1-3-6-micron">10. From the result in 8., select the first record for an image taken in WISE band W1 (3.6 micron)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualize-this-allwise-image">11. Visualize this AllWISE image.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-a-cutout-of-the-allwise-image-centered-on-your-position">12. Plot a cutout of the AllWISE image, centered on your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-a-galex-image-that-covers-your-position">13. Try visualizing a cutout of a GALEX image that covers your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-visualizing-a-cutout-of-an-sdss-image-that-covers-your-position">14. Try visualizing a cutout of an SDSS image that covers your position.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#try-looping-over-all-positions-and-plotting-multiwavelength-cutouts">15. Try looping over all positions and plotting multiwavelength cutouts.</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By NASA-NAVO developers
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2018-2022, NASA-NAVO developers.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
